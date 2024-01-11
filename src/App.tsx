@@ -54,7 +54,14 @@ const rtf = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
 
 function App() {
   return (
-    <main>
+    <main
+      style={{
+        color: "#77e7ed",
+        borderRadius: "10px",
+        border: "2px solid #ffa9c2",
+        padding: "100px",
+      }}
+    >
       <h1>
         The next holiday ({nextHoliday.name}) is {rtf.format(dayDiff, "day")}.
       </h1>
